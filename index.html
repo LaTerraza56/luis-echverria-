@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion de Tres Valles Veracruz</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e8f5e9, #f1fff3);
+            color: #2e3d2f;
+        }
+
+        .hero {
+            height: 65vh;
+            background: url("imagenes/fotito.jpg") no-repeat center/cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.45);
+        }
+        .hero-content {
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content img {
+            width: 120px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        .contenedor {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .bienvenida {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            color: #2e7d32;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        .texto {
+            font-size: 18px;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        .texto strong {
+            color: #1b5e20;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .imagen-card {
+            width: 220px;
+            text-align: center;
+        }
+
+        .imagen-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .imagen-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 14px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .menu h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #1b5e20;
+            font-style: italic;
+        }
+
+        ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        ul li {
+            margin: 15px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #fff;
+            padding: 12px 25px;
+            display: inline-block;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #2e7d32, #1b5e20);
+            transition: 0.3s;
+        }
+
+        ul li a:hover {
+            transform: scale(1.08);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .contador-box{
+            margin-top: 25px;
+            background: linear-gradient(135deg,#2e7d32,#1b5e20);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .contador-box h2{
+            font-size: 24px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        #contador{
+            font-size: 55px;
+            font-weight: bold;
+            color: #d4ffda;
+            text-shadow: 0 0 15px rgba(255,255,255,0.6);
+            animation: zoom 1.5s infinite alternate;
+        }
+
+        @keyframes zoom{
+            from{
+                transform: scale(1);
+            }
+            to{
+                transform: scale(1.08);
+            }
+        }
+
+        .contador-texto{
+            margin-top: 5px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        footer {
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<section class="hero">
+<div class="hero-content">
+        <img src="imagenes/escudo tres v.png" alt="Escudo">
+        <h1>PRESENTACIÓN A TRES VALLES VERACRUZ</h1>
+    </div>
+</section>
+
+<div class="contenedor">
+
+    <div class="tarjeta">
+        <div class="bienvenida">BIENVENIDOS</div>
+
+        <p class="texto">
+			<p style="text-align: justify;">
+              <em><strong>Bienvenidos a este espacio digital</strong></em> donde exploraremos la riqueza cultural,
+            social y económica de la hermosa comunidad de <strong>Tres Valles, Veracruz</strong>.
+	<br><br>
+           A través de este recorrido, podrás adentrarte en sus paisajes, conocer su gente y comprender
+    los elementos que conforman su identidad cultural y social. Cada rincón de este municipio
+    refleja una combinación única entre modernidad y raíces que lo hacen especial.
+	<br><br>
+ Este espacio ha sido diseñado para invitarte a explorar, aprender y conectar con la belleza
+    y el valor de este lugar, mostrando lo más representativo de <em>su entorno, su economía y su desarrollo. </em> </p>
+</p>
+	</div>
+        <div class="galeria">
+
+            <div class="imagen-card">
+                <img src="imagenes/fotito.jpg" alt="Vista aérea">
+                <div class="caption">Un rincón donde la luz y la vida se encuentran en perfecta armonía.</div>
+            </div>
+
+            <div class="imagen-card">
+                <img src="imagenes/septiembre.jpeg" alt="Centro">
+                <div class="caption">Tradición, identidad y orgullo reflejados en cada espacio.</div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="tarjeta menu">
+        <h2><em>Explora más sobre...</em></h2>
+        <ul>
+            <li><a href= "lugares/lugares.html">Lugares de interés</a></li>
+            <li><a href="economia/economia.html">Economía</a></li>
+            <li><a href="comercio/comercio.html">Comercio</a></li>
+        </ul>
+	</div>
+        <div class="contador-box">
+
+    <h3>VISITAS A LA PÁGINA</h3>
+
+    <div id="contador">
+      <p>0</p>
+    </div>
+
+    <div class="contador-texto">
+        Gracias por visitar Tres Valles 
+    </div>
+
+</div>
+
+<script>
+
+let visitas = localStorage.getItem("contadorTresValles");
+
+if(visitas === null){
+
+    visitas = 1;
+
+}else{
+
+    visitas = parseInt(visitas) + 1;
+
+}
+
+localStorage.setItem("contadorTresValles", visitas);
+
+document.getElementById("contador").innerText = visitas;
+
+</script>
+</body>
+</html>		
